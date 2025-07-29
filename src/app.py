@@ -17,8 +17,8 @@ auth_manager = SpotifyClientCredentials(client_id=client_id, client_secret=clien
 spotify = spotipy.Spotify(auth_manager=auth_manager)
 #5C4PDR4LnhZTbVnKWXuDKD morat
 #2piHiUbXwUNNIvYyIOIUKt francisca
-
-resultados=spotify.artist_top_tracks("5C4PDR4LnhZTbVnKWXuDKD")
+id_artista="5C4PDR4LnhZTbVnKWXuDKD"
+resultados=spotify.artist_top_tracks(id_artista)
 print(resultados)
 #canciones=[]
 #for tracks in resultados['tracks']:
